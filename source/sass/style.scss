@@ -1,5 +1,13 @@
 //  Globals
-@import "scaffolding";
+@import "scaffolding.scss";
+@import "variables.scss";
+@import "fonts.scss";
 
 // Vendors
 @import "vendors/normalize.scss";
+
+// Blocks
+
+@import "blocks/page-header.scss";
+@import "blocks/main-navigation.scss";
+@import "blocks/site-list.scss";
