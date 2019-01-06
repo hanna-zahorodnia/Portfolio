@@ -16,78 +16,117 @@
         <span class="page-header__abbr">HZ</span>
       </a>
       <nav class="main-navigation main-navigation--closed main-navigation--nojs">
-          <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="main-navigation__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">About me</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">All Projects</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">Contact</a>
-            </li>
-          </ul>
+        <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-navigation__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">About me</a>
+          </li>
+          <li class="site-list__item site-list__item--projects">
+            <a class="site-list__link" href="#">All Projects</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Contact</a>
+          </li>
+        </ul>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main class="page">
     <h1 class="visually-hidden">Junior Web Developer Portfolio</h1>
     <section class="intro">
-      <h2 class="intro__title">Hi, my name is Hanna Zahorodnia. I'm a content manager who codes</h2>
-      <p class="intro__text">A junior web developer from Ukraine, currently based in Wroclaw, Poland. I have a passion
-        for a11y and telling strories</p>
-      <span class="intro__stack">My stack:</span>
-      <ul class="intro__stack-list">
-        <li class="intro__stack__item">HTML5 & CSS3</li>
-        <li class="intro__stack__item">JS - beginner</li>
-        <li class="intro__stack__item">SASS/LESS</li>
-        <li class="intro__stack__item">Git (Github)</li>
-        <li class="intro__stack__item">Gulp, npm</li>
-        <li class="intro__stack__item">Adobe Photoshop, Zeplin, Avocode</li>
-        <li class="intro__stack__item">Back-end: PHP, SQL</li>
-      </ul>
+      <div class="intro__wrapper container">
+        <p class="intro__name">Hanna Zahorodnia</p>
+        <h2 class="intro__title">A&nbsp;content manager who codes.</h2>
+        <p class="intro__text">I'm a junior web developer from Ukraine, currently based in Wroclaw, Poland. I&nbsp;have
+          a&nbsp;passion for a11y and telling strories.</p>
+        <a class="intro__link button" href="#">Learn more about me</a>
+      </div>
     </section>
-    <section class="projects">
-      <h2 class="project__title">Projects.</h2>
-      <ul class="project__list">
-        <li class="project__item project__item--sedona">
-          <h3 class="project__name">
-            <a class="project__link" href="#">Sedona</a>
-          </h3>
-          <p class="project__stack">HTML/CSS/JS (map, form initiation)</p>
-          <p class="project__text">Graduation Project at Professional HTML & CSS Course, level 1<br>Website with online
-            reservations of tours to Sedona Canyon. Fixed layout</p>
-          <div class="project__buttons">
-            <a class="button project__button">Preview</a>
-            <a class="button project__button">View code</a>
-          </div>
-        </li>
-        <li class="project__item project__item--gllacy">
-          <h3 class="project__name">
-            <a class="project__link" href="#">Gllacy</a>
-          </h3>
-          <p class="project__stack">HTML/CSS/JS (map, modal form)</p>
-          <p class="project__text">Training Project<br>Online store with ice creams and sorbets. Fixed layout.</p>
-          <div class="project__buttons">
-            <a class="button project__button">Preview</a>
-            <a class="button project__button">View code</a>
-          </div>
-        </li>
-        <li class="project__item project__item--mishka">
-          <h3 class="project__name">
-            <a class="project__link" href="#">Mishka</a>
-          </h3>
-          <p class="project__stack">HTML/CSS/JS (map, pop-up, mobile menu)</p>
-          <p class="project__text">Graduation Project at Professional HTML & CSS Course, level 2<br>Online store with
-            handmade knitten toys for kids and adults. </p>
-          <div class="project__buttons">
-            <a class="button project__button">Preview</a>
-            <a class="button project__button">View code</a>
-          </div>
-        </li>
-      </ul>
+    <section class="stack">
+      <div class="stack__wrapper container">
+        <h2 class="stack__title">My stack.</h2>
+        <p class="stack__text">Confident working with HTML&amp;CSS, have fun with preprocessors and excited to dive
+          deeper into Javacript to understand its magic.</p>
+        <ul class="stack__list">
+          <li class="stack__item">
+            <img class="stack__image" src="img/html-logo.svg" width="37" height="52" alt="HTML5 logo">
+          </li>
+          <li class="stack__item">
+            <img class="stack__image" src="img/css-logo.svg" width="37" height="52" alt="CSS3 logo">
+          </li>
+          <li class="stack__item">
+            <img class="stack__image" src="img/js-logo.svg" width="45" height="45" alt="JavaScript logo">
+          </li>
+          <li class="stack__item">
+            <img class="stack__image" src="img/sass-logo.svg" width="52" height="39" alt="Sass logo">
+          </li>
+          <li class="stack__item">
+            <img class="stack__image" src="img/github-logo.svg" width="45" height="45" alt="Github logo">
+          </li>
+          <li class="stack__item">
+            <img class="stack__image" src="img/gulp-logo.svg" width="24" height="52" alt="Gulp logo">
+          </li>
+          <li class="stack__item">
+            <img class="stack__image" src="img/php-logo.svg" width="52" height="26" alt="PHP logo">
+          </li>
+          <li class="stack__item stack__item--sql">SQL</li>
+        </ul>
+        <p class="stack__note">I'm working both with Photoshop and design handoff tools like Zeplin and Avocode.</p>
+      </div>
+    </section>
+    <section class="project">
+      <div class="project__wrapper container">
+        <h2 class="project__title">Projects.</h2>
+        <ul class="project__list">
+          <li class="project__item project__item--mishka">
+            <div class="project__item-wrapper">
+              <h3 class="project__name">
+                <a class="project__link project__link--mishka" href="#">Mishka</a>
+              </h3>
+              <p class="project__stack">HTML/CSS/JS (map, pop-up, mobile menu)</p>
+              <p class="project__text">Online store with handmade knitten toys for kids and adults. </p>
+            </div>
+            <div class="project__image-wrapper">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/mishka-tab@1x.jpg 1x, img/mishka-tab@2x.jpg 2x">
+                <img class="project__image" src="img/mishka-mob@1x.jpg" srcset="img/mishka-mob@2x.jpg 2x" alt="Desktop layout of Mishka website">
+              </picture>
+            </div>
+            <div class="project__mob-image-wrapper">
+              <img class="project__mob-image" src="img/mishka-small.jpg" alt="Mobile layout of Mishka website">
+            </div>
+            <a class="project__link-code" href="#">View code on Github</a>
+          </li>
+          <li class="project__item">
+            <div class="project__item-wrapper">
+              <h3 class="project__name project__name--sedona">
+                <a class="project__link project__link--sedona" href="#">Sedona</a>
+              </h3>
+              <p class="project__stack">HTML/CSS/JS (map, form initiation)</p>
+              <p class="project__text">Website with online reservations of&nbsp;tours to&nbsp;Sedona Canyon. Fixed
+                layout</p>
+            </div>
+            <div class="project__image-wrapper">
+              <img class="project__image" src="img/sedona-mob@1x.jpg" srcset="img/sedona-mob@2x.jpg 2x" alt="Desktop layout of Sedona website">
+            </div>
+            <a class="project__link-code" href="#">View code on Github</a>
+          </li>
+          <li class="project__item project__item--gllacy">
+            <div class="project__item-wrapper">
+              <h3 class="project__name">
+                <a class="project__link" href="#">Gllacy</a>
+              </h3>
+              <p class="project__stack">HTML/CSS/JS (map, modal form)</p>
+              <p class="project__text">Training Project. Online store with ice creams and sorbets. Fixed layout.</p>
+            </div>
+            <div class="project__image-wrapper">
+              <img class="project__image" src="img/gllacy-desktop@1x.jpg" srcset="img/gllacy-desktop@2x.jpg 2x" alt="Desktop layout of Gllacy website">
+            </div>
+            <a class="project__link-code" href="#">View code on Github</a>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="contacts">
       <h2 class="contacts__title">Let's talk.</h2>

@@ -1,28 +1,37 @@
 .site-list {
+  padding-top: 150px;
+
   line-height: 27px;
   font-weight: 700;
+}
+
+.site-list__item {
+  &--projects {
+    display: none;
+  }
 }
 
 .site-list__link {
   display: block;
   padding: 13px 21px;
 
-  font-size: 18px;
+  font-size: 25px;
+  font-weight: 400;
   line-height: 24px;
-  color: $pink-light;
-  text-transform: uppercase;
+  color: #49274a;
   text-decoration: none;
+  text-align: center;
+}
 
-  background-color: $violet;
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
 
-  &:focus,
-  &:hover {
-    background-color: $violet-dark;
+    padding-top: 0;
   }
 
-  &:active {
-    color: rgba($pink-light, 0.3);
-
-    background-color: $violet-dark;
+  .site-list__link {
+    color: #000000;
   }
 }

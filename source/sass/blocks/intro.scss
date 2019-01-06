@@ -1,0 +1,75 @@
+.intro__wrapper {
+  padding: 60px 10% 80px 20px;
+
+  background-image: url("../img/code.svg");
+  background-repeat: no-repeat;
+  background-size: 136px 114px;
+  background-position: 90% 0;
+}
+
+.intro__name {
+  margin: 0 0 10px;
+
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.intro__title {
+  margin: 0 0 20px;
+
+  font-size: 36px;
+  line-height: 1.1;
+  text-transform: lowercase;
+}
+
+.intro__text {
+  margin: 0 0 40px;
+}
+
+.intro__link {
+  display: block;
+
+  padding: 15px 22px;
+
+  color: #ffffff;
+
+  background-color: #e0115f;
+}
+
+@media (min-width: $tablet-width) {
+  .intro__wrapper {
+    padding: 65px 330px 65px 40px;
+  }
+
+  .intro__title {
+    margin-bottom: 43px;
+  }
+
+  .intro__text {
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .intro__link {
+    padding: 17px 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__wrapper {
+    padding: 100px 600px 100px 50px;
+
+    background-image: url("../img/me-myself-i.svg");
+    background-size: 679px 601px;
+    background-position: 100% 50px;
+  }
+
+  .intro__name {
+    font-size: 16px;
+  }
+
+  .intro__title {
+    font-size: 74px;
+  }
+}
