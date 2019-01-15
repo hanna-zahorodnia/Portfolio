@@ -63,7 +63,6 @@
   margin-top: 16px;
   margin-bottom: 16px;
 
-  font-size: 12px;
   line-height: 2;
   text-decoration: none;
   color: #e0115f;
@@ -72,8 +71,6 @@
 }
 
 .project__image-wrapper {
-  max-width: 340px;
-
   border: 10px solid #1e4176;
   border-radius: 8px;
 }
@@ -108,6 +105,10 @@
     margin-bottom: 90px;
 
     &--mishka {
+      margin-bottom: 200px;
+    }
+
+    &--sedona {
       margin-bottom: 200px;
     }
   }
@@ -162,5 +163,70 @@
     position: absolute;
     top: 0;
     right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .project__wrapper {
+    padding: 135px 50px 75px;
+  }
+
+  .project__item-wrapper {
+    margin-bottom: 90px;
+  }
+
+  .project__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project__title {
+    font-size: 74px;
+  }
+
+  .project__name {
+    padding-right: 275px;
+  }
+
+  .project__link {
+    font-size: 45px;
+    
+    &::after {
+      width: 38px;
+      height: 32px;
+      bottom: 6px;
+      right: -50px;
+    }
+  }
+
+  .project__link-code {
+    font-size: 21px;
+  }
+
+  .project__mob-image-wrapper {
+    &--mishka {
+      top: 430px;
+      left: 685px;
+    }
+
+    &--sedona {
+      top: 430px;
+    }
+  }
+}
+
+@media (min-width: $large-desktop-width) {
+  .project__image-wrapper {
+    margin: 0 auto;
+  }
+  
+  .project__mob-image-wrapper {
+    &--mishka {
+      left: 818px;
+    }
+
+    &--sedona {
+      left: 0;
+    }
   }
 }

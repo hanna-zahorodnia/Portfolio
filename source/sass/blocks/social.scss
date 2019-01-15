@@ -1,0 +1,51 @@
+.social {
+  width: 175px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 auto 25px;
+  padding: 0;
+
+  text-align: center;
+  list-style: none;
+}
+
+.social__link {
+  width: 50px;
+  height: 50px;
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  background-color: #ffffff;
+
+  border-radius: 50%;
+
+  &--github {
+    background-color: #b1ceff;
+  }
+
+}
+
+.social__link-icon {
+  &--facebook {
+    fill: #b1ceff;
+  }
+
+  &--linkedin {
+    fill: #b1ceff;
+  }
+
+  &--github {
+    fill: #ffffff;
+  }
+}
+
+@media (min-width: $tablet-width) {
+    .social {
+        margin: 0;
+    }
+}
